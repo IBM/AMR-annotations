@@ -1,0 +1,1127 @@
+# ::snt What is the time zone of Salt Lake City?
+(z / zone
+      :mod (t / time)
+      :poss (c / city :name (n / name :op1 "Salt" :op2 "Lake" :op3 "City"))
+      :domain (a / amr-unknown))
+
+# ::snt Who killed Caesar?
+(k / kill-01
+      :ARG0 (a / amr-unknown)
+      :ARG1 (p / person :name (n / name :op1 "Caesar")))
+
+# ::snt What is the highest mountain in Germany?
+(h / have-degree-91
+      :ARG1 (a / amr-unknown)
+      :ARG2 (h2 / high-02
+            :ARG1 a)
+      :ARG3 (m2 / most)
+      :ARG5 (m3 / mountain
+            :location (c / countrty :name (n / name :op1 "Germany"))))
+
+# ::snt Which American presidents were in office during the Vietnam War?
+(h / have-org-role-91
+      :ARG0 (p / person
+            :mod (a / amr-unknown))
+      :ARG1 (o / office)
+      :ARG2 (p2 / president
+            :mod (c / country :name (n / name :op1 "America")))
+      :time (w / war :name (n2 / name :op1 "Vietnam" :op2 "War")))
+
+# ::snt Butch Otter is the governor of which U.S. state?
+(h / have-org-role-91
+      :ARG0 (p / person :name (n2 / name :op1 "Butch" :op2 "Otter"))
+      :ARG1 (s / state
+            :mod (a / amr-unknown)
+            :mod (c / country :name (n / name :op1 "U.S.")))
+      :ARG2 (g / governor))
+
+# ::snt How many gold medals did Michael Phelps win at the 2008 Olympics?
+(w / win-01
+      :ARG0 (p / person :name (n / name :op1 "Michael" :op2 "Phelps"))
+      :ARG1 (m / medal
+            :consist-of (g / gold)
+            :quant (a / amr-unknown))
+      :ARG2 (g2 / game :name (n2 / name :op1 "Olympics")
+            :time (d / date-entity :year 2008)))
+
+# ::snt Which artists were born on the same date as Rachel Stevens?
+(b / bear-02
+      :ARG1 (a / artist
+            :mod (a2 / amr-unknown))
+      :time (d / date
+            :ARG1-of (s / same-01
+                  :ARG2 (d2 / date
+                        :time-of (b2 / bear-02
+                              :ARG1 (p / person :name (n / name :op1 "Rachel" :op2 "Stevens")))))))
+
+# ::snt What is the profession of Frank Herbert?
+(p / profession
+      :poss (p2 / person :name (n / name :op1 "Frank" :op2 "Herbert"))
+      :domain (a / amr-unknown))
+
+# ::snt Are Taiko some kind of Japanese musical instrument?
+(i2 / instrument
+      :polarity (a100 / amr-unknown)
+      :mod (m / music)
+      :mod (c / country :name (n / name :op1 "Japan"))
+      :mod (k / kind-yy
+            :mod (s / some))
+      :domain (t / Taiko))
+
+# ::snt How many seats does the home stadium of FC Porto have?
+(h / have-03
+      :ARG0 (s / stadium
+            :mod (h2 / home)
+            :poss (t / team :name (n / name :op1 "FC" :op2 "Porto")))
+      :ARG1 (s2 / seat
+            :quant (a / amr-unknown)))
+
+# ::snt Which frequent flyer program has the most airlines?
+(h / have-03
+      :ARG0 (p / program
+            :mod (p2 / person
+                  :ARG1-of (f / fly-01
+                        :ARG1-of (f2 / frequent-02)))
+            :mod (a / amr-unknown))
+      :ARG1 (a2 / airline
+            :ARG1-of (h2 / have-quant-91
+                  :ARG3 (m / most))))
+
+# ::snt Which European countries have a constitutional monarchy?
+(h / have-03
+      :ARG0 (c / country
+            :mod (c2 / continent :name (n / name :op1 "Europe"))
+            :mod (a / amr-unknown))
+      :ARG1 (m / monarchy
+            :mod (c3 / constitution)))
+
+# ::snt Which countries have places with more than two caves?
+(h / have-03
+      :ARG0 (c / country
+            :mod (a / amr-unknown))
+      :ARG1 (p / place
+            :ARG0-of (h2 / have-03
+                  :ARG1 (c2 / cave
+                        :quant (m / more-than :op1 2)))))
+
+# ::snt Which airports are located in California, USA?
+(l / locate-01
+      :ARG1 (a / airport
+            :mod (a2 / amr-unknown))
+      :location (s / state :name (n / name :op1 "California")
+            :location (c / country :name (n2 / name :op1 "USA"))))
+
+# ::snt What are the nicknames of San Francisco?
+(n / nickname-01
+      :ARG1 (c / city :name (n2 / name :op1 "San" :op2 "Francisco"))
+      :ARG2 (a / amr-unknown))
+
+# ::snt What is Angela Merkel’s birth name?
+(n / name-01
+      :ARG1 (p / person :name (n2 / name :op1 "Angela" :op2 "Merkel"))
+      :ARG2 (a / amr-unknown)
+      :mod (b / bear-02))
+
+# ::snt Who is the mayor of Berlin?
+(h / have-org-role-91
+      :ARG0 (a / amr-unknown)
+      :ARG1 (c / city :name (n / name :op1 "Berlin"))
+      :ARG2 (m / mayor))
+
+# ::snt Which countries in the European Union adopted the Euro?
+(a / adopt-01
+      :ARG0 (c / country
+            :mod (a2 / amr-unknown)
+            :part-of (o / organization :name (n / name :op1 "European" :op2 "Union")))
+      :ARG1 (e / euro))
+
+# ::snt Which software has been published by Mean Hamster Software?
+(p / publish-01
+      :ARG0 (c / company :name (n / name :op1 "Mean" :op2 "Hamster" :op3 "Software"))
+      :ARG1 (s / software
+            :mod (a / amr-unknown)))
+
+# ::snt Which country was Bill Gates born in?
+(b / bear-02
+      :ARG1 (p / person :name (n / name :op1 "Bill" :op2 "Gates"))
+      :location (c / country
+            :mod (a / amr-unknown)))
+
+# ::snt How many grand-children did Jacques Cousteau have?
+(h / have-03
+      :ARG0 (p / person :name (n / name :op1 "Jacques" :op2 "Cousteau"))
+      :ARG1 (p2 / person
+            :ARG0-of (h2 / have-rel-role-91
+                  :ARG1 p
+                  :ARG2 (g / grandchild))
+            :quant (a / amr-unknown)))
+
+# ::snt Give me all professional skateboarders from Sweden.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (p / person
+            :ARG0-of (s / skateboard-01)
+            :mod (p2 / professional)
+            :mod (a / all)
+            :source (c / country :name (n / name :op1 "Sweden")))
+      :ARG2 (i / i))
+
+# ::snt Which monarchs of the United Kingdom were married to a German?
+(m / marry-01
+      :ARG1 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (c / country :name (n / name :op1 "United" :op2 "Kingdom"))
+                  :ARG2 (m2 / monarch))
+            :mod (a / amr-unknown))
+      :ARG2 (p2 / person
+            :mod (c2 / country :name (n2 / name :op1 "Germany"))))
+
+# ::snt Give me all Argentine films.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (f / film
+            :mod (c / country :name (n / name :op1 "Argentina"))
+            :mod (a / all))
+      :ARG2 (i / i))
+
+# ::snt How did Michael Jackson die?
+(d / die-01
+      :ARG1 (p / person :name (n / name :op1 "Michael" :op2 "Jackson"))
+      :manner (a / amr-unknown))
+
+# ::snt Which U.S. state has been admitted latest?
+(a / admit-02
+      :ARG1 (s / state
+            :mod (c / country :name (n / name :op1 "U.S."))
+            :mod (a2 / amr-unknown))
+      :time (l / last))
+
+# ::snt Which classes does the Millepede belong to?
+(b / belong-01
+      :ARG0 (m / millepede)
+      :ARG1 (c / class
+            :mod (a / amr-unknown)))
+
+# ::snt Give me the homepage of Forbes.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (h / homepage
+            :poss (m / magazine :name (n / name :op1 "Forbes")))
+      :ARG2 (i / i))
+
+# ::snt Who is the husband of Amanda Palmer?
+(h / have-rel-role-91
+      :ARG0 (a / amr-unknown)
+      :ARG1 (p2 / person :name (n / name :op1 "Amanda" :op2 "Palmer"))
+      :ARG2 (h2 / husband))
+
+# ::snt Who painted The Storm on the Sea of Galilee?
+(p / paint-02
+      :ARG0 (a / amr-unknown)
+      :ARG1 (p2 / picture :name (n / name :op1 "The" :op2 "Storm" :op3 "on" :op4 "the" :op5 "Sea" :op6 "of" :op7 "Galilee")))
+
+# ::snt What is the highest place of Karakoram?
+(h / have-degree-91
+      :ARG1 (a / amr-unknown)
+      :ARG2 (h2 / high-02
+            :ARG1 a)
+      :ARG3 (m2 / most)
+      :ARG5 (p2 / place
+            :location (m / mountain :name (n / name :op1 "Karakoram"))))
+
+# ::snt When did Finland join the EU?
+(j / join-01
+      :ARG1 (c / country :name (n / name :op1 "Finland"))
+      :ARG2 (o / organization :name (n2 / name :op1 "EU"))
+      :time (a / amr-unknown))
+
+# ::snt Which actors play in Big Bang Theory?
+(p / play-02
+      :ARG0 (p2 / person
+            :ARG0-of (a / act-01)
+            :mod (a2 / amr-unknown))
+      :subevent-of (s / show :name (n / name :op1 "Big" :op2 "Bang" :op3 "Theory")))
+
+# ::snt Which computer scientist won an oscar?
+(w / win-01
+      :ARG0 (s / scientist
+            :mod (c / computer)
+            :mod (a / amr-unknown))
+      :ARG1 (a2 / award :name (n / name :op1 "Oscar")))
+
+# ::snt Who wrote Harry Potter?
+(w / write-01
+      :ARG0 (a / amr-unknown)
+      :ARG1 (b / book :name (n / name :op1 "Harry" :op2 "Potter")))
+
+# ::snt Give me all writers that won the Nobel Prize in literature.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (p / person
+            :ARG0-of (w2 / win-01
+                  :ARG1 (a2 / award :name (n / name :op1 "Nobel" :op2 "Prize" :op3 "in" :op4 "literature")))
+            :ARG0-of (w / write-01)
+            :mod (a / all))
+      :ARG2 (i / i))
+
+# ::snt Give me English actors starring in Lovesick.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (p / person
+            :ARG0-of (a / act-01)
+            :mod (c / country :name (n / name :op1 "England"))
+            :ARG1-of (s / star-01
+                  :ARG2 (s2 / show :name (n2 / name :op1 "Lovesick"))))
+      :ARG2 (i / i))
+
+# ::snt What is the nick name of Baghdad?
+(n / nickname-01
+      :ARG1 (c / city :name (n2 / name :op1 "Baghdad"))
+      :ARG2 (a / amr-unknown))
+
+# ::snt In which city was the president of Montenegro born?
+(b / bear-02
+      :ARG1 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (c / country :name (n / name :op1 "Montenegro"))
+                  :ARG2 (p2 / president)))
+      :location (c2 / city
+            :mod (a / amr-unknown)))
+
+# ::snt Which U.S. state has the highest population density?
+(h / have-03
+      :ARG0 (s / state
+            :mod (c / country :name (n / name :op1 "U.S."))
+            :mod (a / amr-unknown))
+      :ARG1 (d / density
+            :mod (p / population)
+            :ARG1-of (h2 / have-degree-91
+                  :ARG2 (h3 / high-02
+                        :ARG1 d)
+                  :ARG3 (m / most))))
+
+# ::snt What is the longest river in China?
+(h / have-degree-91
+      :ARG1 (a / amr-unknown)
+      :ARG2 (l / long-03
+            :ARG1 a)
+      :ARG3 (m / most)
+      :ARG5 (r2 / river
+            :location (c / country :name (n / name :op1 "China"))))
+
+# ::snt What is the area code of Berlin?
+(c / code
+      :mod (a / area)
+      :poss (c2 / city :name (n / name :op1 "Berlin"))
+      :domain (a2 / amr-unknown))
+
+# ::snt How many scientists graduated from an Ivy League university?
+(g / graduate-01
+      :ARG1 (s / scientist
+            :quant (a / amr-unknown))
+      :ARG2 (u / university
+            :mod (l / league :name (n / name :op1 "Ivy" :op2 "League"))))
+
+# ::snt Which professional surfers were born in Australia?
+(b / bear-02
+      :ARG1 (p / person
+            :ARG0-of (s / surf-01)
+            :mod (p2 / professional)
+            :mod (a / amr-unknown))
+      :location (c / country :name (n / name :op1 "Australia")))
+
+# ::snt Give me all Dutch parties.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (p / party
+            :mod (a / all)
+            :mod (c / country :name (n / name :op1 "Netherlands")))
+      :ARG2 (i / i))
+
+# ::snt How many moons does Mars have?
+(h / have-03
+      :ARG0 (p / planet :name (n / name :op1 "Mars"))
+      :ARG1 (m / moon
+            :quant (a / amr-unknown)))
+
+# ::snt What is Batman's real name?
+(n / name-01
+      :ARG1 (p / person :name (n2 / name :op1 "Batman"))
+      :ARG2 (a / amr-unknown)
+      :ARG1-of (r / real-04))
+
+# ::snt What is Elon Musk famous for?
+(f / fame-01
+      :ARG1 (p / person :name (n / name :op1 "Elon" :op2 "Musk"))
+      :ARG2 (a / amr-unknown))
+
+# ::snt Who is the author of WikiLeaks?
+(a / author-01
+      :ARG0 (a2 / amr-unknown)
+      :ARG1 (p2 / publication :name (n / name :op1 "WikiLeaks")))
+
+# ::snt Sean Parnell was the governor of which U.S. state?
+(h / have-org-role-91
+      :ARG0 (p2 / person :name (n2 / name :op1 "Sean" :op2 "Parnell"))
+      :ARG1 (s / state
+            :mod (c / country :name (n / name :op1 "U.S."))
+            :mod (a / amr-unknown))
+      :ARG2 (g / governor))
+
+# ::snt How many years was the Ford Model T manufactured?
+(m / manufacture-01
+      :ARG1 (c2 / car-make :name (n / name :op1 "Model" :op2 "T")
+            :mod (c / company :name (n2 / name :op1 "Ford")))
+      :duration (t / temporal-quantity
+            :quant (a / amr-unknown)
+            :unit (y / year)))
+
+# ::snt When was Carlo Giuliani shot?
+(s / shoot-02
+      :ARG1 (p / person :name (n / name :op1 "Carlo" :op2 "Giuliani"))
+      :time (a / amr-unknown))
+
+# ::snt Give me all animals that are extinct.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (a / animal
+            :mod (a2 / all)
+            :domain-of (e / extinct))
+      :ARG2 (i / i))
+
+# ::snt Who was the wife of President Lincoln?
+(h / have-rel-role-91
+      :ARG0 (a / amr-unknown)
+      :ARG1 (p2 / person :name (n / name :op1 "Lincoln")
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG2 (p3 / president)))
+      :ARG2 (w / wife))
+
+# ::snt How many awards has Bertrand Russell?
+(h / have-03
+      :ARG0 (p / person :name (n / name :op1 "Bertrand" :op2 "Russell"))
+      :ARG1 (a / award-01
+            :quant (a2 / amr-unknown)))
+
+# ::snt Is Pamela Anderson a vegan?
+(v / vegan
+   :polarity (a100 / amr-unknown)
+      :domain (p / person :name (n / name :op1 "Pamela" :op2 "Anderson")))
+
+# ::snt Which space probes were sent into orbit around the sun?
+(s / send-01
+      :ARG1 (p / probe
+            :mod (s2 / space)
+            :mod (a / amr-unknown))
+      :ARG2 (o / orbit
+            :location (a2 / around
+                  :op1 (s3 / sun))))
+
+# ::snt Which German cities have more than 250000 inhabitants?
+(h / have-03
+      :ARG0 (c / city
+            :mod (c2 / country :name (n / name :op1 "Germany"))
+            :mod (a / amr-unknown))
+      :ARG1 (p / person
+            :ARG0-of (i2 / inhabit-01
+                  :ARG1 c)
+            :quant (m / more-than :op1 250000)))
+
+# ::snt Who is the daughter of Robert Kennedy married to?
+(m / marry-01
+      :ARG1 (p / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG1 (p2 / person :name (n / name :op1 "Robert" :op2 "Kennedy"))
+                  :ARG2 (d / daughter)))
+      :ARG2 (a / amr-unknwon))
+
+# ::snt How many students does the Free University of Amsterdam have?
+(h / have-03
+      :ARG0 (u / university :name (n / name :op1 "Free" :op2 "University" :op3 "of" :op4 "Amsterdam"))
+      :ARG1 (p / person
+            :ARG0-of (s / study-01)
+            :quant (a / amr-unknown)))
+
+# ::snt What is the revenue of IBM?
+(r / revenue
+      :poss (c / company :name (n / name :op1 "IBM"))
+      :domain (a / amr-unknown))
+
+# ::snt How many James Bond movies do exist?
+(e / exist-01
+      :ARG1 (m / movie
+            :mod (p / person :name (n / name :op1 "James" :op2 "Bond"))
+            :quant (a / amr-unknown)))
+
+# ::snt Who does the voice of Bart Simpson?
+(d / do-02
+      :ARG0 (a / amr-unknown)
+      :ARG1 (v / voice-01
+            :ARG0 (p / person :name (n / name :op1 "Bart" :op2 "Simpson"))))
+
+# ::snt Who was Tom Hanks married to?
+(m / marry-01
+      :ARG1 (p / person :name (n / name :op1 "Tom" :op2 "Hanks"))
+      :ARG2 (a / amr-unknown))
+
+# ::snt Through which countries does the Yenisei river flow?
+(f / flow-01
+      :ARG1 (r / river :name (n / name :op1 "Yenisei"))
+      :path (c / country
+            :mod (a / amr-unknown)))
+
+# ::snt Give me all cars that are produced in Germany.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (c / car
+            :mod (a / all)
+            :ARG1-of (p / produce-01
+                  :location (c2 / country :name (n / name :op1 "Germany"))))
+      :ARG2 (i / i))
+
+# ::snt When did Michael Jackson die?
+(d / die-01
+      :ARG1 (p / person :name (n / name :op1 "Michael" :op2 "Jackson"))
+      :time (a / amr-unknown))
+
+# ::snt What is the highest volcano in Africa?
+(h / have-degree-91
+      :ARG0 (a / amr-unknown)
+      :ARG2 (h2 / high-02
+            :ARG1 a)
+      :ARG3 (m / most)
+      :ARG5 (v2 / volcano
+            :location (c / continent :name (n / name :op1 "Africa"))))
+
+# ::snt Which poet wrote the most books?
+(w / write-01
+      :ARG0 (p / poet
+            :mod (a / amr-unknown))
+      :ARG1 (b / book
+            :ARG1-of (h / have-quant-91
+                  :ARG3 (m / most))))
+
+# ::snt Give me all gangsters from the prohibition era.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (g2 / gangster
+            :mod (a / all)
+            :ARG1-of (b / be-temporally-at-91
+                  :ARG2 (e / era
+                        :time-of (p / prohibit-01))))
+      :ARG2 (i / i))
+
+# ::snt Give me all spacecrafts that flew to Mars.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (s / spacecraft
+            :ARG2-of (f / fly-01
+                  :destination (p / planet :name (n / name :op1 "Mars")))
+            :mod (a / all))
+      :ARG2 (i / i))
+
+# ::snt Show me all Czech movies.
+(s / show-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (m / movie
+            :mod (c / country :name (n / name :op1 "Czechia"))
+            :mod (a / all))
+      :ARG2 (i / i))
+
+# ::snt Give me all taikonauts.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (t / taikonaut
+            :mod (a / all))
+      :ARG2 (i / i))
+
+# ::snt Which countries have more than ten volcanoes?
+(h / have-03
+      :ARG0 (c / country
+            :mod (a / amr-unknown))
+      :ARG1 (v / volcano
+            :quant (m / more-than :op1 10)))
+
+# ::snt Give me all movies with Tom Cruise.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (m / movie
+            :prep-with (p3 / person :name (n2 / name :op1 "Tom" :op2 "Cruise")))
+      :ARG2 (i / i))
+
+# ::snt When did Dracula's creator die?
+(d / die-01
+      :ARG1 (p / person
+            :ARG0-of (c / create-01
+                  :ARG1 (p2 / person :name (n / name :op1 "Dracula"))))
+      :time (a / amr-unknown))
+
+# ::snt Who created English Wikipedia?
+(c / create-01
+      :ARG0 (a / amr-unknown)
+      :ARG1 (p / publication :name (n / name :op1 "Wikipedia")
+            :medium (l / language :name (n2 / name :op1 "English"))))
+
+# ::snt Give me all female German chancellors.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (c / country :name (n / name :op1 "Germany"))
+                  :ARG2 (c2 / chancellor
+                        :mod (f / female)))
+            :mod (a / all))
+      :ARG2 (i / i))
+
+# ::snt Who owns Aldi?
+(o / own-01
+      :ARG0 (a / amr-unknown)
+      :ARG1 (c / company :name (n / name :op1 "Aldi")))
+
+# ::snt Which books were written by Danielle Steel?
+(w / write-01
+      :ARG0 (p / person :name (n / name :op1 "Danielle" :op2 "Steel"))
+      :ARG1 (b / book
+            :mod (a / amr-unknown)))
+
+# ::snt Who was influenced by Socrates?
+(i2 / influence-01
+      :ARG0 (p / person :name (n / name :op1 "Socrates"))
+      :ARG1 (a / amr-unknown))
+
+# ::snt How deep is Lake Chiemsee?
+(h / have-degree-91
+      :ARG1 (l / lake :name (n / name :op1 "Lake" :op2 "Chiemsee"))
+      :ARG2 (d2 / deep-02
+            :ARG1 l)
+      :ARG3 (a / amr-unknown))
+
+# ::snt Which companies work in the aerospace industry as well as in medicine?
+(w / work-01
+      :ARG0 (c / company
+            :mod (a / amr-unknown))
+      :ARG2 (a2 / and
+            :op1 (i2 / industry
+                  :mod (a3 / aerospace))
+            :op2 (m / medicine)))
+
+# ::snt Which professional surfers were born on the Philippines?
+(b / bear-02
+      :ARG1 (p / person
+            :ARG0-of (s / surf-01)
+            :mod (p2 / professional)
+            :mod (a / amr-unknown))
+      :location (c / country :name (n / name :op1 "Philippines")))
+
+# ::snt Who were the parents of Queen Victoria?
+(h / have-rel-role-91
+      :ARG0 (a / amr-unknown)
+      :ARG1 (p2 / person
+            :name (n / name
+                  :op1 "Queen"
+                  :op2 "Victoria"))
+      :ARG2 (p / parent))
+
+# ::snt Are there any castles in the United States?
+(b / be-located-at-91
+      :polarity (a7 / amr-unknown)
+      :ARG1 (c / castle
+            :mod (a / any))
+      :ARG2 (c2 / country :name (n / name :op1 "United" :op2 "States")))
+
+# ::snt Which languages are spoken in Estonia?
+(s / speak-01
+      :ARG3 (l / language
+            :mod (a / amr-unknown))
+      :location (c / country :name (n / name :op1 "Estonia")))
+
+# ::snt Give me a list of all critically endangered birds.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (l / list-01
+            :ARG1 (b / bird
+                  :mod (a / all)
+                  :ARG1-of (e / endanger-01
+                        :ARG1-of (c / critical-03))))
+      :ARG2 (i / i))
+
+# ::snt Which countries are connected by the Rhine?
+(c / connect-01
+      :ARG1 (c2 / country
+            :mod (a / amr-unknown))
+      :ARG3 (r / river :name (n / name :op1 "Rhine")))
+
+# ::snt Who was the father of Queen Elizabeth II?
+(h / have-rel-role-91
+      :ARG0 (a / amr-unknown)
+      :ARG1 (p2 / person :name (n / name :op1 "Elizabeth" :op2 "II")
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG2 (q / queen)))
+      :ARG2 (f / father))
+
+# ::snt Give me all chemical elements.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (e / element
+            :mod (c / chemical)
+            :mod (a / all))
+      :ARG2 (i / i))
+
+# ::snt Give me all American presidents of the last 20 years.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (p / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (c / country :name (n / name :op1 "America"))
+                  :ARG2 (p2 / president)
+                  :time (b / before
+                        :op1 (n2 / now)
+                        :duration (t / temporal-quantity :quant 20
+                              :unit (y2 / year))))
+            :mod (a / all))
+      :ARG2 (i / i))
+
+# ::snt When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?
+(b / be-temporally-at-91
+      :ARG1 (b2 / be-located-at-91
+            :ARG1 (m / movie :name (n / name :op1 "Worst" :op2 "Case" :op3 "Scenario"))
+            :ARG2 (c / cinema
+                  :location (c2 / country :name (n2 / name :op1 "Netherlands"))))
+      :ARG2 (a / amr-unknown))
+
+# ::snt Whom did Lance Bass marry?
+(m / marry-01
+      :ARG1 (p / person :name (n / name :op1 "Lance" :op2 "Bass"))
+      :ARG2 (a / amr-unknown))
+
+# ::snt Which subsidiary of TUI Travel serves both Glasgow and Dublin?
+(s / serve-01
+      :ARG0 (s2 / subsidiary
+            :mod (a / amr-unknown)
+            :part-of (c / company :name (n / name :op1 "TUI" :op2 "Travel")))
+      :ARG2 (a2 / and
+            :op1 (c2 / city :name (n2 / name :op1 "Glasgow"))
+            :op2 (c3 / city :name (n3 / name :op1 "Dublin"))))
+
+# ::snt What languages are spoken in Pakistan?
+(s / speak-01
+      :ARG3 (l / language
+            :mod (a / amr-unknown))
+      :location (c / country :name (n / name :op1 "Pakistan")))
+
+# ::snt Who is the daughter of Bill Clinton married to?
+(m / marry-01
+      :ARG1 (p / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG1 (p2 / person :name (n / name :op1 "Bill" :op2 "Clinton"))
+                  :ARG2 (d / daughter)))
+      :ARG2 (a / amr-unknown))
+
+# ::snt Who was on the Apollo 11 mission?
+(b / be-located-at-91
+      :ARG1 (a / amr-unknown)
+      :ARG2 (m / mission
+            :mod (s / spaceship :name (n / name :op1 "Apollo" :op2 "11"))))
+
+# ::snt What is the wavelength of Indigo?
+(w / wavelength
+      :mod (i2 / Indigo)
+      :domain (a / amr-unknown))
+
+# ::snt Give me all B-sides of the Ramones.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (s / side :name (n / name :op1 "B")
+            :part-of (m / music :name (n2 / name :op1 "Ramones"))
+            :mod (a / all))
+      :ARG2 (i / i))
+
+# ::snt Who was called Scarface?
+(c / call-01
+      :ARG1 (a / amr-unknown)
+      :ARG2 (p / person :name (n / name :op1 "Scarface")))
+
+# ::snt Which rivers flow into the North Sea?
+(f / flow-01
+      :ARG1 (r / river
+            :mod (a / amr-unknown))
+      :destination (s / sea :name (n / name :op1 "North" :op2 "Sea")))
+
+# ::snt Where is Fort Knox located?
+(l / locate-01
+      :ARG1 (f / facility :name (n / name :op1 "Fort" :op2 "Knox"))
+      :location (a / amr-unknown))
+
+# ::snt Which daughters of British earls died at the same place they were born at?
+(d / die-01
+      :ARG1 (p / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG1 (p4 / person
+                        :ARG0-of (h2 / have-org-role-91
+                              :ARG1 (c / country :name (n / name :op1 "Britain"))
+                              :ARG2 (e / earl)))
+                  :ARG2 (d2 / daughter))
+            :mod (a / amr-unknown))
+      :location (p2 / place
+            :ARG1-of (s / same-01
+                  :ARG2 (p3 / place
+                        :location-of (b / bear-02
+                              :ARG1 p)))))
+
+# ::snt How many emperors did China have?
+(h / have-03
+      :ARG0 (c / country :name (n / name :op1 "China"))
+      :ARG1 (p / person
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG1 c
+                  :ARG2 (e / emperor))
+            :quant (a / amr-unknown)))
+
+# ::snt What are the names of the Teenage Mutant Ninja Turtles?
+(n / name-01
+      :ARG1 (a2 / animal :name (n2 / name :op1 "Teenage" :op2 "Mutant" :op3 "Ninja" :op4 "Turtles"))
+      :ARG2 (a / amr-unknown))
+
+# ::snt Where does Piccadilly start?
+(s / start-01
+      :ARG1 (r / road :name (n / name :op1 "Piccadilly"))
+      :location (a / amr-unknown))
+
+# ::snt What is the name of the university where Obama's wife studied?
+(n / name-01
+      :ARG1 (u / university
+            :location-of (s / study-01
+                  :ARG1 (p / person
+                        :ARG0-of (h / have-rel-role-91
+                              :ARG1 (p2 / person :name (n2 / name :op1 "Obama"))
+                              :ARG2 (w / wife)))))
+      :ARG2 (a / amr-unknown))
+
+# ::snt When did Paraguay proclaim its independence?
+(p / proclaim-01
+      :ARG0 (c / country :name (n / name :op1 "Paraguay"))
+      :ARG1 (d / depend-01 :polarity -
+            :ARG0 c)
+      :time (a / amr-unknown))
+
+# ::snt How short is the shortest active NBA player?
+(s2 / short-07
+      :ARG1 (p / person
+            :ARG1-of (h2 / have-degree-01
+                  :ARG2 (s / short-07
+                        :ARG1 p)
+                  :ARG3 (m / most)
+                  :ARG5 (p2 / person
+                        :ARG0-of (h / have-org-role-91
+                              :ARG1 (l / league :name (n / name :op1 "NBA"))
+                              :ARG2 (p3 / person
+                                    :ARG0-of (p4 / play-01)))
+                        :ARG0-of (a / activity-06))))
+      :quant (a2 / amr-unknown))
+
+# ::snt Where did Abraham Lincoln die?
+(d / die-01
+      :ARG1 (p / person :name (n / name :op1 "Abraham" :op2 "Lincoln"))
+      :location (a / amr-unknown))
+
+# ::snt When was Jack Wolfskin founded?
+(f / found-01
+      :ARG1 (c / company :name (n / name :op1 "Jack" :op2 "Wolfskin"))
+      :time (a / amr-unknown))
+
+# ::snt In which city is the headquarter of Air China?
+(b / be-located-at-91
+      :ARG1 (h / headquarters-yy
+            :poss (c / company :name (n / name :op1 "Air" :op2 "China")))
+      :ARG2 (c2 / city
+            :mod (a / amr-unknown)))
+
+# ::snt What is the founding year of the brewery that produces Pilsner Urquell?
+(b2 / be-temporally-at-91
+      :ARG1 (f / found-01
+            :ARG1 (b / brewery
+                  :ARG0-of (p / produce-01
+                        :ARG1 (p2 / product :name (n / name :op1 "Pilsner" :op2 "Urquell")))))
+      :ARG2 (d / date-entity
+            :year (a2 / amr-unknown)))
+
+# ::snt When did the Boston Tea Party take place?
+(b2 / be-temporally-at-91
+      :ARG1 (e / event :name (n / name :op1 "Boston" :op2 "Tea" :op3 "Part"))
+      :ARG2 (a / amr-unknown))
+
+# ::snt Which animals are critically endangered?
+(e / endanger-01
+      :ARG1 (a / animal
+            :mod (a2 / amr-unknown))
+      :ARG1-of (c / critical-03))
+
+# ::snt Which politicians were married to a German?
+(m / marry-01
+      :ARG1 (p / politician
+            :mod (a / amr-unknown))
+      :ARG2 (p2 / person
+            :mod (c / country :name (n / name :op1 "Germany"))))
+
+# ::snt How big is the earth's diameter?
+(b / big
+      :domain (d / diameter
+            :poss (p / planet :name (n / name :op1 "Earth")))
+      :quant (a / amr-unknown))
+
+# ::snt Is the wife of President Obama called Michelle?
+(c / call-01
+   :polarity (a100 / amr-unknown)
+      :ARG1 (p / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG1 (p2 / person :name (n / name :op1 "Obama")
+                        :ARG0-of (h2 / have-org-role-91
+                              :ARG2 (p3 / president)))
+                  :ARG2 (w / wife)))
+      :ARG2 (p4 / person :name (n2 / name :op1 "Michelle")))
+
+# ::snt Which U.S. state has the abbreviation MN?
+(h / have-03
+      :ARG0 (s / state
+            :mod (c / country :name (n / name :op1 "U.S."))
+            :mod (a / amr-unknown))
+      :ARG1 (a2 / abbreviate-01
+            :ARG1 s
+            :ARG4 (s2 / state :name (n2 / name :op1 "MN"))))
+
+# ::snt When did Muhammad die?
+(d / die-01
+      :ARG1 (p / person :name (n / name :op1 "Muhammad"))
+      :time (a / amr-unknown))
+
+# ::snt What is the atmosphere of the Moon composed of?
+(c / compose-01
+      :ARG1 (a / atmosphere
+            :mod (m / moon :name (n / name :op1 "Moon")))
+      :ARG2 (a2 / amr-unknown))
+
+# ::snt Who is the governor of Texas?
+(h / have-org-role-91
+      :ARG0 (a / amr-unknown)
+      :ARG1 (s / state :name (n / name :op1 "Texas"))
+      :ARG2 (g / governor))
+
+# ::snt Which movies did Kurosawa direct?
+(d / direct-01
+      :ARG0 (p / person :name (n / name :op1 "Kurosawa"))
+      :ARG1 (m / movie
+            :mod (a / amr-unknown)))
+
+# ::snt What was the name of the famous battle in 1836 in San Antonio?
+(n / name-01
+      :ARG1 (b / battle-01
+            :ARG1-of (f / fame-01)
+            :time (d / date-entity :year 1836)
+            :location (c / city :name (n2 / name :op1 "San" :op2 "Antonio")))
+      :ARG2 (a / amr-unknown))
+
+# ::snt Give me the official websites of actors of the television show Charmed.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (w / website
+            :mod (o / official)
+            :poss (p / person
+                  :ARG0-of (a / act-01
+                        :subevent-of (s / show-04 :name (n / name :op1 "Charmed")
+                              :ARG1 (b / broadcast-program :name (n2 / name :op1 "Charmed"))
+                              :ARG3 (t / television)))))
+      :ARG2 (i / i))
+
+# ::snt How many calories does a baguette have?
+(h / have-03
+      :ARG0 (b / baguette)
+      :ARG1 (c / calory
+            :quant (a / amr-unknown)))
+
+# ::snt Give me all libraries established before 1400.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (l / library
+            :mod (a / all)
+            :ARG1-of (e / establish-01
+                  :time (b / before
+                        :op1 (d / date-entity :year 1400))))
+      :ARG2 (i / i))
+
+# ::snt Give me all Frisian islands that belong to the Netherlands.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (i2 / island
+            :mod (a / all)
+            :mod (e / ethnic-group :name (n / name :op1 "Frisian"))
+            :ARG0-of (b / belong-01
+                  :ARG1 (c / country :name (n2 / name :op1 "Netherlands"))))
+      :ARG2 (i / i))
+
+# ::snt Which museum exhibits The Scream by Munch?
+(e / exhibit-01
+      :ARG0 (m / museum
+            :mod (a / amr-unknown))
+      :ARG1 (p / picture :name (n / name :op1 "The" :op2 "Scream")
+            :prep-by (p2 / person :name (n2 / name :op1 "Munch"))))
+
+# ::snt When was the De Beers company founded?
+(f / found-01
+      :ARG1 (c / company :name (n / name :op1 "De" :op2 "Beers"))
+      :time (a / amr-unknown))
+
+# ::snt Who became president after JFK died?
+(b / become-01
+      :ARG1 (a / amr-unknown)
+      :ARG2 (p3 / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (p / president)))
+      :time (a2 / after
+            :op1 (d / die-01
+                  :ARG1 (p2 / person :name (n / name :op1 "JFK")))))
+
+# ::snt Who are the parents of the wife of Juan Carlos I?
+(h / have-rel-role-91
+      :ARG0 (a / amr-unknown)
+      :ARG1 (p2 / person
+            :ARG0-of (h2 / have-rel-role-91
+                  :ARG1 (p4 / person :name (n2 / name :op1 "Juan" :op2 "Carlos" :op3 "I"))
+                  :ARG2 (w / wife)))
+      :ARG2 (p3 / parent))
+
+# ::snt Who is the novelist of the work a song of ice and fire?
+(n / novelist
+      :ARG0-of (w / work-12
+            :ARG1 (b / book :name (n2 / name :op1 "song" :op2 "of" :op3 "ice" :op4 "and" :op5 "fire")))
+      :domain (a / amr-unknown))
+
+# ::snt In which studio did the Beatles record their first album?
+(r / record-01
+      :ARG0 (t / team :name (n / name :op1 "Beatles"))
+      :ARG1 (a / album
+            :ord (o / ordinal-entity :value 1)
+            :poss t)
+      :location (s / studio
+            :mod (a2 / amr-unknown)))
+
+# ::snt Which beer brewing companies are located in North-Rhine Westphalia?
+(l / locate-01
+      :ARG1 (c / company
+            :ARG0-of (b / brew-01
+                  :ARG1 (b2 / beer))
+            :mod (a / amr-unknown))
+      :location (s / state :name (n / name :op1 "North-Rhine" :op2 "Westphalia")))
+
+# ::snt When did princess Diana die?
+(d / die-01
+      :ARG1 (p / person :name (n / name :op1 "Diana")
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (p2 / princess)))
+      :time (a / amr-unknown))
+
+# ::snt Who founded Intel?
+(f / found-01
+      :ARG0 (a / amr-unknown)
+      :ARG1 (c / company :name (n / name :op1 "Intel")))
+
+# ::snt Who is the youngest player in the Premier League?
+(h2 / have-degree-91
+      :ARG0 (a2 / amr-unknown)
+      :ARG2 (y / young)
+      :ARG3 (m / most)
+      :ARG5 (p4 / person
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (l / league :name (n / name :op1 "Premier" :op2 "League"))
+                  :ARG2 (p2 / person
+                        :ARG0-of (p3 / play-01)))))
+
+# ::snt Which instruments does Cat Stevens play?
+(p / play-11
+      :ARG0 (p2 / person :name (n / name :op1 "Cat" :op2 "Stevens"))
+      :ARG2 (i2 / instrument
+            :mod (a / amr-unknown)))
+
+# ::snt How many rivers and lakes are in South Carolina?
+(b / be-located-at-91
+      :ARG1 (a / and
+            :op1 (r / river)
+            :op2 (l / lake)
+            :quant (a2 / amr-unknown))
+      :ARG2 (s / state :name (n / name :op1 "South" :op2 "Carolina")))
+
+# ::snt Who was called Rodzilla?
+(c / call-01
+      :ARG1 (a / amr-unknown)
+      :ARG2 (p / person :name (n / name :op1 "Rodzilla")))
+
+# ::snt Give me the capitals of all countries in Africa.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (c / city
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (c2 / country
+                        :mod (a / all)
+                        :location (c3 / continent :name (n / name :op1 "Africa")))
+                  :ARG2 (c4 / capital)))
+      :ARG2 (i / i))
+
+# ::snt Which bridges are of the same type as the Manhattan Bridge?
+(t / type-03
+      :ARG1 (b / bridge
+            :mod (a / amr-unknown))
+      :ARG1-of (s / same-01
+            :ARG2 (t2 / type-03
+                  :ARG1 (b2 / bridge :name (n / name :op1 "Manhattan" :op2 "Bridge")))))
+
+# ::snt How many companies were founded by the founder of Facebook?
+(f / found-01
+      :ARG0 (p / person
+            :ARG0-of (f2 / found-01
+                  :ARG1 (c2 / company :name (n / name :op1 "Facebook"))))
+      :ARG1 (c / company
+            :quant (a / amr-unknown)))
+
+# ::snt Show me hiking trails in the Grand Canyon where there's no danger of flash floods.
+(s / show-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (t / trail
+            :ARG1-of (h / hike-01)
+            :location (c / canyon :name (n / name :op1 "Grand" :op2 "Canyon"))
+            :location (e / endanger-01 :polarity -
+                  :ARG0 (f / flood-01
+                        :ARG1-of (f2 / flash-02))))
+      :ARG2 (i / i))
+
+# ::snt Which book has the most pages?
+(h / have-03
+      :ARG0 (b / book
+            :mod (a / amr-unknown))
+      :ARG1 (p / page
+            :ARG1-of (h2 / have-quant-91
+                  :ARG3 (m / most))))
+
+# ::snt What is the largest state in the United States?
+(h / have-degree-91
+      :ARG1 (a2 / amr-unknown)
+      :ARG2 (l / large)
+      :ARG3 (m / most)
+      :ARG5 (s2 / state
+            :location (c / country :name (n / name :op1 "United" :op2 "States"))))
+
+# ::snt Give me the websites of companies with more than 500000 employees.
+(g / give-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (w / website
+            :poss (c / company
+                  :ARG0-of (h / have-03
+                        :ARG1 (p / person
+                              :ARG1-of (e / employ-01
+                                    :ARG0 c)
+                              :quant (m / more-than :op1 500000)))))
+      :ARG2 (i / i))
+
+# ::snt What were the names of the three ships by Columbus?
+(n / name-01
+      :ARG1 (s / ship :quant 3
+            :prep-by (p3 / person :name (n3 / name :op1 "Columbus")))
+      :ARG2 (a / amr-unknown))
